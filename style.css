@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    transition: all 0.1s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: #ebe9e9;
+}
+
+section {
+    padding: 2rem 4%;
+}
+
+.title {
+    /* font-size: 4rem; */
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37.32px;
+}
+
+/* navbar starts here */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.mid .btn0 {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+.sidebar nav {
+    display: none;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    display: none;
+}
+
+.sidebar .cta {
+    display: none;
+}
+
+.sidebar .cta a {
+    padding: 0;
+    font-size: 2rem;
+}
+
+.mid {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 5px 5px 5px 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+header .nav-links a {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 2rem;
+    font-size: 1.7rem;
+    color: black;
+    transition: color 0.2s ease-in-out;
+}
+
+header .nav-links a:hover {
+    color: mediumslateblue;
+}
+
+header .nav-links i {
+    margin-right: 0.5rem;
+}
+
+.btn {
+    padding: 1.3rem 2.4rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.cta1 a {
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
+    /* margin: 0 2rem; */
+    font-size: 1.7rem;
+    color: black;
+}
+
+.cta1 a:hover {
+    color: mediumslateblue;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+#fa-solid:hover {
+    color: red;
+}
+
+/* HOME SECTION */
+.home {
+    width: 100%;
+    display: flex;
+    background-image: url('./images/World\ Map\ Stencil\ Made\ from\ 4\ Ply\ Mat\ Board\ 15x24\ Background\ Size\ 1\ \(1\).png'),
+        url('./images/711619b1b792296922d19b714be61387\ 1.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.home .title {
+    margin-top: 6.5rem;
+    margin-bottom: 7rem;
+}
+
+.home .title h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 5.2rem;
+    text-align: left;
+    line-height: 7rem;
+}
+
+.home p {
+    margin: 20px 0px;
+    font-family: "Roboto", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    text-align: left;
+
+}
+
+.images {
+    width: 60%;
+    height: 100%;
+    margin-top: 7rem;
+    display: flex;
+    /* padding: 6rem; */
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 49%;
+    height: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: mediumslateblue;
+    background-color: white;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+    padding: 1rem;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: mediumslateblue;
+}
+
+.swiper-slide img,
+.grid-images img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-images {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+
+/* .main-button{
+    width: 50%;
+} */
+
+.main-button button {
+    background-color: mediumslateblue;
+    color: #fff;
+    border: none;
+    width: 20rem;
+    margin-right: 36rem;
+    padding: 20px 20px;
+    /* font-size: 1rem; */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-button button:hover {
+    background-color: rgb(74, 45, 240);
+}
+
+.destination .destile {
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+}
+
+.destination .title {
+    line-height: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.title .flex p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.title .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .flex button {
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 15rem;
+    border-radius: 30px;
+    border-color: mediumslateblue;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Roboto", serif;
+}
+
+.title .flex button:hover {
+    background-color: mediumpurple;
+}
+
+.destination-images {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5rem;
+    /* gap: 1rem; */
+    /* justify-content: space-evenly; */
+}
+
+.destination-images .text {
+    text-align: center;
+}
+
+.destination-images .text p {
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+
+.destination-images .text a {
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.stories {
+    width: 100%;
+}
+
+.stories .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.stories .title p {
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+}
+
+.stories .title button {
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 20rem;
+    border-radius: 30px;
+    border-color: mediumslateblue;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Roboto", serif;
+}
+
+.stories .title button:hover {
+    background-color: mediumpurple;
+}
+
+.stories-all {
+    display: flex;
+    gap: 5rem;
+}
+
+.stories-left .text1 {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Roboto", serif;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stories-left .text1:hover {
+    text-decoration: underline;
+}
+
+.stories-left .text2 {
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.stories-left .text2:hover {
+    text-decoration: underline;
+}
+
+.stories-right .right {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.stories-right .right-text {
+    margin-left: 2rem;
+    /* gap: 5rem; */
+}
+
+.stories-right .right-text a {
+    font-size: 1.5rem;
+}
+
+.stories-right .right-text a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.stories-right .right-text .text1:hover {
+    text-decoration: underline;
+}
+
+.stories-right .right-text .text1 {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Roboto", serif;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stories .date {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+}
+
+.highlights {
+    margin-bottom: 3rem;
+}
+
+.highlights .title p {
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.highlights .left .review .review-text {
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.highlights .left .review .review-text p {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Roboto", serif;
+    margin-bottom: 0.5rem;
+    /* height: 5rem; */
+    /* width: 5rem; */
+}
+
+.highlights .review {
+    display: flex;
+}
+
+.highlights-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlights-all h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Roboto", serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.highlights-all p {
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+    /* margin-bottom: 0.5rem; */
+}
+
+.highlights .right {
+    display: flex;
+}
+
+.highlights .right .righty {
+    margin-left: 1rem;
+    /* border-radius: 20px; */
+}
+
+.highlights .right .righty video {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 30px;
+    /* height: 10rem; */
+}
+
+.video-container {
+    position: relative;
+    width: 347px;
+    height: 347px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* Play symbol */
+.toggle-button::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent black;
+}
+
+/* pause symbol */
+.toggle-button.pause::after {
+    content: "";
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 1px 0 0 black;
+    /* Pause symbol */
+}
+
+.highlights .right button {
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    width: 20rem;
+    border-radius: 30px;
+    border-color: mediumslateblue;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Roboto", serif;
+}
+
+.highlights .right button:hover {
+    background-color: mediumpurple;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/Mediterranean\ Dream\ Home.png');
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.contact h1 {
+    line-height: 5rem;
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.cta-buttons {
+    width: 100%;
+    margin-top: 20rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cta-primary {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #9cff6e, #7873f5);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-primary:hover {
+    background: linear-gradient(45deg, #6a60d1, #9cff6e);
+}
+
+.cta-secondary {
+    /* width: 20rem; */
+    padding: 1.5rem 10rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 2rem 4%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* justify-content: space-between; */
+    margin-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    /* min-width: 200px; */
+    /* margin: 1rem; */
+}
+
+.footer-column h3 {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: mediumslateblue;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer-social p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons div {
+    background-color: white;
+    paddixng: 1rem 1rem;
+    border-radius: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 40%;
+        scroll-padding-top: 0rem;
+    }
+
+    .section {
+        padding: 1rem 4%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 2rem 2%;
+        flex-direction: column;
+        align-items: flex-start;
+        /* width: 33.5%; */
+    }
+
+    .mid .btn0 {
+        margin-left: 3rem;
+        font-size: 2rem;
+        display: block;
+    }
+
+    /* hamburger starts here */
+
+    .hamburger {
+        padding: 3rem;
+        display: block;
+    }
+
+    .sidebar .navbar-item {
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: black;
+    }
+
+    .sidebar .cta {
+        display: block;
+    }
+
+    .sidebar nav a {
+        display: block;
+    }
+
+    header .nav-links {
+        display: none;
+    }
+
+    header .cta1 {
+        display: none;
+    }
+
+    /* hamburger ends here  */
+
+    .input-container input {
+        border-radius: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12rem;
+    }
+
+    .home .title h1 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+        margin: 0 0.5rem;
+    }
+
+    .home p {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .main-button button {
+        width: 20rem;
+        margin-right: 0rem;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        border-radius: 50px;
+        padding: 1rem;
+    }
+
+
+    .images {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .grid-images {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .destination-images {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 1rem 0;
+    }
+
+    .destination-images>div {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        margin-right: 1rem;
+    }
+
+    .destination-images img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .stories-all {
+        flex-direction: column;
+    }
+
+    .stories-left img {
+        width: 100%;
+    }
+
+    .highlights-all {
+        flex-direction: column;
+    }
+
+    .highlights .right img {
+        width: 152px;
+        height: 202px;
+        /* gap: 0px; */
+        /* flex-direction: column; */
+    }
+
+    .video-container {
+        width: 136px;
+        height: 153px;
+    }
+
+    .toggle-button {
+        width: 20%;
+        height: 20%;
+    }
+
+    .highlights .right button {
+        margin-left: 0rem;
+    }
+
+    .cta-buttons {
+        margin-top: 5rem;
+        flex-direction: row;
+    }
+
+    .cta-secondary {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact {
+        height: 50vh;
+    }
+
+    .footer {
+        padding: 0rem;
+    }
+
+    .footer-column ul li a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+    }
+
+    .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}

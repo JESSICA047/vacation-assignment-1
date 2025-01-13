@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Travel Guide</title>
+</head>
+
+<body>
+    <!-- header starts here -->
+    <header class="navbar">
+        <div class="mid">
+            <div class="logo" id="logo">
+                <a href="" id="#hero">
+                    <img src="./images/Your Ultimate Guide to Travel Logo Design • Online Logo Maker's Blog 1.png"
+                        alt="">
+                </a>
+            </div>
+            <div class="search-container">
+                <div class="input-container">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search.." name="search">
+                </div>
+                </form>
+            </div>
+            <a href="#" class="btn0">SignIn</a>
+            <div class="hamburger" onclick="showSidebar()">
+                <img src="./images/Group.png" alt="">
+            </div>
+        </div>
+        <div>
+            <nav class="nav-links">
+                <a href="#home" class="hide">Home</a>
+                <a href="#destination" class="hide">Destinations</a>
+                <a href="#stories" class="hide">Stories</a>
+                <a href="#highlights" class="hide">Highlights</a>
+                <a href="#contact" class="hide">Contact</a>
+            </nav>
+        </div>
+        <div class="cta1">
+            <a href="#" class="btn"><i class="fa fa-sign-in"></i>SignIn</a>
+            <a href="#" class="btn" id="fa-solid"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+
+        <div class="sidebar">
+            <nav class="">
+                <a href="#"><img
+                        src="./images/Your Ultimate Guide to Travel Logo Design • Online Logo Maker's Blog 1.png"
+                        alt="">
+                </a>
+                <a href="#home" class="navbar-item"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#destination" class="navbar-item"><i class="fa-solid fa-map-pin"></i>Destinations</a>
+                <a href="#stories" class="navbar-item"><i class="fa-solid fa-book-open"></i>Stories</a>
+                <a href="#highlights" class="navbar-item"><i class="fa-solid fa-highlighter"></i>Highlights</a>
+                <a href="#contact" class="navbar-item"><i class="fa-solid fa-address-book"></i>Contact</a>
+            </nav>
+
+            <div class="cta">
+                <a href="#" class="btn"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+            </div>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <section class="home" id="home">
+        <div class="title">
+            <h1>Discover the</h1>
+            <h1>World’s Hidden</h1>
+            <h1>Wonders</h1>
+            <p>Get insider knowledge on the best places to visit, eat, and stay. Learn how to navigate unfamiliar
+                destinations like a pro, and stay up-to-date with the latest trends and advice.
+            </p>
+            <div class="main-button">
+                <a href="#"><button>Explore</button></a>
+            </div>
+        </div>
+
+        <div class="images">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/Component.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/Property 1=Mediterranean Dream Home.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/Property 1=download (8).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" ></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="grid-images">
+                <img src="./images/8aeea96ad1bc9165cd2d81f01104155d.png" alt="">
+                <img src="./images/download (9).png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+        <div class="title">
+            <p class="destile">Top Destination</p>
+            <div class="flex">
+                <p>Popular</p>
+                <a href=""><button>More</button></a>
+            </div>
+        </div>
+        <div class="destination-images">
+            <div class="image1">
+                <img src="./images/download (10).png" alt="">
+                <div class="text">
+                    <p>Paris</p>
+                    <a href="">France</a>
+                </div>
+            </div>
+            <div class="image2">
+                <img src="./images/10 Historical Places In Istanbul, Turkey Worth Visiting.png" alt="">
+                <div class="text">
+                    <p>Istanbul</p>
+                    <a href="">Turkey</a>
+                </div>
+            </div>
+            <div class="image3">
+                <img src="./images/The Ultimate Guide To Visiting Huacachina, Peru _ Fun Life Crisis.png" alt="">
+                <div class="text">
+                    <p>Huacachina</p>
+                    <a href="">Peru</a>
+                </div>
+            </div>
+            <div class="image4">
+                <img src="./images/38b8e50d-596e-4c0f-9fb2-1bb72beedacc.png" alt="">
+                <div class="text">
+                    <p>Hangzhou</p>
+                    <a href="">China</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stories" id="stories">
+        <div class="title">
+            <p>Latest Stories</p>
+            <a href=""><button>Explore all destination</button></a>
+        </div>
+        <div class="stories-all">
+            <div class="stories-left">
+                <img src="./images/NYC-LA Food & Lifestyle Photographer & Director - Tara Donne (1).png" alt="">
+                <p class="text1">Los Angeles foods and drinks guides: 10 things to try in Los Angeles California.</p>
+                <p class="text2">it seems that in california, almost any problem can solved with a combination of
+                    avocados toast,
+                    sushi,
+                    and tacos al pastor.
+                </p>
+                <p class="date">Dec 06 2024 - 5 min read</p>
+            </div>
+            <div class="stories-right">
+                <div class="right">
+                    <img src="./images/London.png" alt="">
+                    <div class="right-text">
+                        <a href="#">Shopping</a>
+                        <p class="text1">15 south London Markets You’ll Love: Best Markets in South London</p>
+                        <p class="date">Dec 06 2024 - 5 min read</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./images/Undersea Restaurant in the Maldives.png" alt="">
+                    <div class="right-text">
+                        <a href="#">Restaurant</a>
+                        <p class="text1">5 most incredible underwater restaurant in the world you can book with point in
+                            2024</p>
+                        <p class="date">Dec 06 2024 - 6 min read</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./images/Chicago.png" alt="">
+                    <div class="right-text">
+                        <a href="#">Travel Budget</a>
+                        <p class="text1">Visiting Chicago on a Budget: Affordable Eats and Attraction Deals.</p>
+                        <p class="date">Dec 06 2024 - 8 min read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights" id="highlights">
+        <div class="title">
+            <p>Trekker's Highlights</p>
+        </div>
+        <div class="highlights-all">
+            <div class="highlights left">
+                <div class="review">
+                    <img src="./images/dubai.png" alt="">
+                    <div class="review-text">
+                        <p>Maria Angelica</p>
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                        <img src="./images/star.png" alt="">
+                    </div>
+                </div>
+                <h2>Ross's Dubai Adventure</h2>
+                <p>Ross’s desert safari in dubai was</p>
+                <p>unforgettable! As she dune-bashed</p>
+                <p>through the golden sands’ she felt</p>
+                <p>free and exhilarated. a chance encounter</p>
+                <p>with a local artist in bustling souk left her</p>
+                <p>with a cherished memory - and a beautiful, handmade gift.</p>
+            </div>
+            <div class="highlights right">
+                <img src="./images/Desert Safari Dubai.png" alt="">
+                <div class="righty">
+                    <div class="video-container">
+                        <video id="customVideo" width="347px" height="347px">
+                            <source src="./images/12 Most Beautiful Places on Planet Earth.mp4" type="video/mp4">
+                            <source src="./images/12 Most Beautiful Places on Planet Earth.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="toggle-button" id="playButton"></div>
+                    </div>
+                    <a href=""><button>See all highlights</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <h1>Get Your Travel Inspiration<br>
+                Straight to Your Inbox
+            </h1>
+            <div class="cta-buttons">
+                <div class="cta-secondary">Get Ready for The Ultimate Travel Experience</div>
+                <button class="cta-primary">Get Started</button>
+            </div>
+            <h2>Discover new destinations, cultures, and experiences</h2>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our Values</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="#">Destination Guides</a></li>
+                    <li><a href="#">Travel Resources</a></li>
+                    <li><a href="#">Itinerary Planning</a></li>
+                    <li><a href="#">Travel Tips and Advice</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Terms and Conditions</h3>
+                <ul>
+                    <li><a href="#">Liability</a></li>
+                    <li><a href="#">Intellectual Property</a></li>
+                    <li><a href="#">Governing Law</a></li>
+                    <li><a href="#">User Responsibilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Our Social Media Links</a></li>
+                    <li><a href="#">Email Address</a></li>
+                    <li><a href="#">Support us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="./images/Your Ultimate Guide to Travel Logo Design • Online Logo Maker's Blog 1.png"
+                    alt="Company Logo">
+                <div class="footer-social">
+                    <p>Follow us on</p>
+                    <div class="social-icons">
+                        <div><a href="#"><img src="./images/3225194_app_facebook_logo_media_popular_icon.png"
+                                    alt="Facebook">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/4102586_applications_linkedin_social_social media_icon.png"
+                                    alt="LinkedIn">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/2993685_brand_brands_google_logo_logos_icon.png"
+                                    alt="Google">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
