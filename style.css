@@ -259,6 +259,10 @@ header .nav-links i {
     background-color: rgb(74, 45, 240);
 }
 
+.destination {
+    width: 100%;
+}
+
 .destination .destile {
     font-weight: 700;
     font-family: "Playfair Display", serif;
@@ -417,6 +421,7 @@ header .nav-links i {
 }
 
 .highlights {
+    width: 100%;
     margin-bottom: 3rem;
 }
 
@@ -612,6 +617,7 @@ header .nav-links i {
 }
 
 .footer {
+    /* width: 100%; */
     background-color: #f5f5f5;
     padding: 2rem 4%;
 }
@@ -683,7 +689,7 @@ header .nav-links i {
 
 .social-icons div {
     background-color: white;
-    paddixng: 1rem 1rem;
+    /* padding: 1rem 1rem; */
     border-radius: 10px;
 }
 
@@ -903,5 +909,319 @@ header .nav-links i {
     .footer-column h3 {
         font-size: 1.2rem;
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    html {
+        /* font-size: 30%; */
+        scroll-padding-top: 0rem;
+    }
+
+    .section {
+        padding: 2rem 4%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 0rem 2%;
+        flex-direction: column;
+        align-items: flex-start;
+        /* width: 33.5%; */
+    }
+
+    .mid .btn0 {
+        margin-left: 3rem;
+        font-size: 2rem;
+        display: block;
+    }
+
+    /* hamburger starts here */
+
+    .hamburger {
+        padding: 3rem;
+        display: block;
+    }
+
+    .sidebar .navbar-item {
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: black;
+    }
+
+    .sidebar .cta {
+        display: block;
+    }
+
+    .sidebar nav a {
+        display: block;
+    }
+
+    header .nav-links {
+        display: none;
+    }
+
+    header .cta1 {
+        display: none;
+    }
+
+    .input-container input {
+        border-radius: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12rem;
+    }
+
+    .home .title h1 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+        margin: 0 0.5rem;
+    }
+
+    .home p {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .main-button button {
+        width: 20rem;
+        margin-right: 0rem;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        border-radius: 50px;
+        padding: 1rem;
+    }
+
+
+    .images {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .grid-images {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .destination-images {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 1rem 0;
+    }
+
+    .destination-images>div {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        margin-right: 1rem;
+    }
+
+    .destination-images img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .stories-all {
+        flex-direction: column;
+    }
+
+    .stories-left img {
+        width: 100%;
+    }
+
+    .highlights-all {
+        flex-direction: column;
+    }
+
+    .highlights .right img {
+        width: 252px;
+        height: 352px;
+        /* gap: 0px; */
+        /* flex-direction: column; */
+    }
+
+    .video-container {
+        width: 186px;
+        height: 203px;
+    }
+
+    .toggle-button {
+        width: 20%;
+        height: 20%;
+    }
+
+    .highlights .right button {
+        margin-left: 0rem;
+    }
+
+    .cta-buttons {
+        margin-top: 5rem;
+        flex-direction: row;
+    }
+
+    .cta-secondary {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact {
+        height: 70vh;
+    }
+
+    .footer {
+        padding: 0rem;
+    }
+
+    .footer-column ul li a {
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+    }
+
+    .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 70%;
+        width: 100vw;
+        /* scroll-padding-top: 5rem; */
+    }
+
+    .images {
+        width: 140%;
+    }
+
+
+    .destination {
+        width: 100%;
+    }
+
+    .destination .flex p {
+        margin-right: 117rem;
+    }
+
+    .destination-images {
+        gap: 110px;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4 {
+        width: 30rem;
+    }
+
+
+    .stories {
+        width: 140rem;
+    }
+
+    .highlights-all {
+        width: 115rem;
+        gap: 15rem;
+    }
+
+    .highlights .right img {
+        width: 100%;
+    }
+
+    .contact {
+        width: 145rem;
+    }
+
+    .footer {
+        width: 145rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    html {
+        font-size: 70%;
+        width: 100vw;
+        /* scroll-padding-top: 5rem; */
+    }
+
+    .images {
+        width: 100%;
+    }
+
+
+    .destination {
+        width: 100%;
+    }
+
+    .destination .flex p {
+        margin-right: 113rem;
+    }
+
+    .destination-images {
+        gap: 100px;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4 {
+        width: 30rem;
+    }
+
+
+    .stories {
+        width: 140rem;
+    }
+
+    .highlights-all {
+        width: 115rem;
+        gap: 15rem;
+    }
+
+    .highlights .right img {
+        width: 100%;
+    }
+
+    .contact {
+        width: 145rem;
+    }
+
+    .footer {
+        width: 145rem;
+    }
+}
+
+@media (min-width: 1281px) {
+    .contact {
+        width: 132rem;
+    }
+
+    .footer {
+        width: 132rem;
     }
 }
