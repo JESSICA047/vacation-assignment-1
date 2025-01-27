@@ -39,18 +39,3 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-// PLAY BUTTON
-const video = document.getElementById("customVideo");
-const playButton = document.getElementById("playButton");
-
-// Toggle play/pause and button icon
-playButton.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-    playButton.classList.add("pause"); // Show pause icon
-  } else {
-    video.pause();
-    playButton.classList.remove("pause"); // Show play icon
-  }
-});

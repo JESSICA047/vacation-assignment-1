@@ -211,6 +211,8 @@ header .nav-links i {
     background-color: white;
     border-radius: 30px;
     padding: 2rem;
+    height: 1px;
+    width: 1px;
 }
 
 .swiper-pagination-bullet {
@@ -762,6 +764,14 @@ header .nav-links i {
         display: block;
     }
 
+    .sidebar .cta .fa{
+        margin-right: 5px;
+    }
+
+    .sidebar .cta .btn0{
+        margin-right: 10px;
+    }
+
     .sidebar nav a {
         display: block;
     }
@@ -814,6 +824,7 @@ header .nav-links i {
 
     .swiper .swiper-button-prev,
     .swiper .swiper-button-next {
+        width: 2px;
         border-radius: 50px;
         padding: 1rem;
     }
