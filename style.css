@@ -668,15 +668,27 @@ header .nav-links i {
 }
 
 .footer-bottom {
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
     border-top: 1px solid #ddd;
 }
 
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .footer-logo img {
+    margin-top: 10px;
     width: 50px;
     height: 50px;
 }
 
+.footer-social{
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 .footer-social p {
     font-size: 1.5rem;
@@ -764,11 +776,11 @@ header .nav-links i {
         display: block;
     }
 
-    .sidebar .cta .fa{
+    .sidebar .cta .fa {
         margin-right: 5px;
     }
 
-    .sidebar .cta .btn0{
+    .sidebar .cta .btn0 {
         margin-right: 10px;
     }
 
