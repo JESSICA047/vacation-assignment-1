@@ -9,6 +9,10 @@
     transition: all 0.1s linear;
 }
 
+:root {
+    --swiper-navigation-size: 20px;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -559,7 +563,7 @@ header .nav-links i {
 }
 
 .contact {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100vh;
     background-image: url('./images/Mediterranean\ Dream\ Home.png');
@@ -760,6 +764,7 @@ header .nav-links i {
     /* hamburger starts here */
 
     .hamburger {
+        margin-left: 5rem;
         padding: 3rem;
         display: block;
     }
@@ -965,6 +970,7 @@ header .nav-links i {
     /* hamburger starts here */
 
     .hamburger {
+        margin-left: 10rem;
         padding: 3rem;
         display: block;
     }
@@ -995,6 +1001,7 @@ header .nav-links i {
 
     .input-container input {
         border-radius: 10px;
+        width: 20rem;
     }
 
     .home {
@@ -1231,7 +1238,7 @@ header .nav-links i {
     }
 
     .contact {
-        width: 145rem;
+        width: 130rem;
     }
 
     .footer {
