@@ -689,7 +689,7 @@ header .nav-links i {
     height: 50px;
 }
 
-.footer-social{
+.footer-social {
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -753,6 +753,7 @@ header .nav-links i {
         flex-direction: column;
         align-items: flex-start;
         /* width: 33.5%; */
+        justify-content: space-between;
     }
 
     .mid .btn0 {
